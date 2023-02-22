@@ -1,0 +1,8 @@
+- hosts: dev-wordpress
+  tasks:
+  - name: Instalando o Wordpress
+    apt:
+      pkg:
+      - wordpress
+      update_cache: yes
+    become: yes
